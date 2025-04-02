@@ -24,13 +24,13 @@ const links = [
 
 export const SocialLinks = () => {
   return (
-    <div className="p-4 flex items-center justify-center space-x-30">
+    <div className="p-4 flex flex-wrap items-center justify-center space-y-5 space-x-5 md:space-y-0 md:space-x-30">
       {
         links.map(({ href, icon, subtitle, title }, index) => (
           <Link key={ index } href={ href } target="blank">
-            <div className="flex items-center space-x-5">
-              <span className="text-4xl">{ icon }</span>
-              <div className="grid text-left text-sm font-mono">
+            <div className="flex items-center space-x-2 md:space-x-5">
+              <span className="text-3xl md:text-4xl">{ icon }</span>
+              <div className="grid text-left text-xs md:text-sm font-mono">
                 <span>{ title }</span>
                 <span>{ subtitle }</span>
               </div>

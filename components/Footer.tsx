@@ -12,7 +12,7 @@ export const Footer = () => {
         
             <div className="flex flex-col items-center gap-6 my-8">
               <div className="flex items-center gap-8">
-                <Link href="">
+                <Link href="https://x.com/Jhongil983?t=7r8VCGd12Ukp9ReeIn102A&s=09">
                   <IoLogoTwitter fill="gray" className="text-2xl" />
                 </Link>
                 
@@ -24,7 +24,7 @@ export const Footer = () => {
                   <IoLogoLinkedin fill="gray" className="text-2xl" />
                 </Link>
                 
-                <Link href="">
+                <Link href="https://www.instagram.com/jhong_il15?igsh=a3RjZmFtd2xqOW9x">
                   <IoLogoInstagram fill='gray' className='text-2xl' />
                 </Link>
               </div>
