@@ -12,9 +12,9 @@ export const Cv = () => {
 
   return (
     <div className="my-40 2xl:my-60 text-center" id="home">
-      <h1 className="text-gray-400 text-3xl mb-6">Hello World 👋</h1>
-      <h2 className="text-gray-500 text-4xl font-semibold mb-2">Soy John Gil</h2>
-      <h2 className="font-bold text-5xl mb-5">SOFTWARE DEVELOPER</h2>
+      <h1 className="text-gray-400 text-2xl md:text-3xl mb-6">Hello World 👋</h1>
+      <h2 className="text-gray-500 text-2xl md:text-4xl font-semibold mb-2">Soy John Gil</h2>
+      <h2 className="font-bold text-3xl md:text-5xl mb-5">SOFTWARE DEVELOPER</h2>
 
       <button
         className="bg-[#4E2780] relative transition-all text-xs border border-gray-500 hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] rounded-full cursor-pointer"

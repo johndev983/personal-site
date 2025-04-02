@@ -32,9 +32,9 @@ export const Navbar = () => {
 
                 <li className='max-lg:border-b max-lg:py-3 max-lg:mt-2'>
                   <div className="relative flex items-center ml-2 lg:ml-4">
-                    <a href="javascript:void(0)" className="flex items-center justify-center w-12 h-12 text-base font-medium leading-normal text-center align-middle transition-colors duration-150 ease-in-out bg-transparent border border-solid shadow-none cursor-pointer rounded-2xl text-stone-500 border-stone-200 hover:text-primary active:text-primary focus:text-primary">
+                    <button className="flex items-center justify-center w-12 h-12 text-base font-medium leading-normal text-center align-middle transition-colors duration-150 ease-in-out bg-transparent border border-solid shadow-none cursor-pointer rounded-2xl text-stone-500 border-stone-200 hover:text-primary active:text-primary focus:text-primary">
                       <IoSettingsOutline className="text-2xl" />
-                    </a>
+                    </button>
                   </div>
                 </li>
               </ul>
