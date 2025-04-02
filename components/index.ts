@@ -1,0 +1,7 @@
+export * from './About'
+export * from './Cv'
+export * from './Footer'
+export * from './Logo'
+export * from './Navbar'
+export * from './Projects'
+export * from './SocialLinks'
