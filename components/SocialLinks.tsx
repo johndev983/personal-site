@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoMailOpenOutline } from 'react-icons/io5'
 
 const links = [
   {
@@ -15,10 +15,10 @@ const links = [
     title: 'LinkedIn'
   },
   {
-    href: 'https://wa.me/573202010757',
-    icon: <IoLogoWhatsapp />,
-    subtitle: '320-201-0757',
-    title: 'Whatsapp'
+    href: 'https://mailto:johndev983@gmail.com',
+    icon: <IoMailOpenOutline />,
+    subtitle: '/johndev983@',
+    title: 'Gmail'
   }
 ]
 

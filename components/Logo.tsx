@@ -1,18 +1,41 @@
-import Image from 'next/image'
-import logoImage from '../assets/logo.png'
+'use client'
 
-interface Props {
-  height?: number;
-  width?:  number;
-}
+import { useEffect, useRef } from 'react';
+import { animate } from 'animejs';
 
-export const Logo = ({ height = 35, width = 200 }: Props) => {
+export const Logo = ({ text = 'dev' }: { text?: string }) => {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    if (textRef.current) {
+      animate('.dev-animate', {
+        y: [
+          { to: '-2.75rem', ease: 'outExpo', duration: 600 },
+          { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
+        ],
+        // Property specific parameters
+        rotate: {
+          from: '-1turn',
+          delay: 0
+        },
+        delay: (_, i) => i * 50, // Function based value
+        ease: 'inOutCirc',
+        loopDelay: 1000,
+        loop: false
+      });
+    }
+  }, [ text ]);
+
+  // Función para envolver cada letra en un <span>
+  const wrapLetters = (str: string) => {
+    return str.split('').map((char, index) => (
+      <span className="dev-animate" key={ index }>{ char }</span>
+    ));
+  };
+
   return (
-    <Image
-      className={`ml-1 w-7 h-7 md:ml-3`}
-      src={ logoImage }
-      alt="Picture of the author"
-      style={{ width, height }}
-    />
-  )
+    <div ref={ textRef } className="flex items-center text-xl md:text-2xl font-bold text-[#23232A] font-mono">
+      <span className="text-[#4E2780]">&#60;</span>John.<span className="text-[#4E2780] inline-flex">{ wrapLetters( text ) }&nbsp;&#47;&#62;</span>
+    </div>
+  );
 }
