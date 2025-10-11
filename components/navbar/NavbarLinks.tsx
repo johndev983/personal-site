@@ -17,10 +17,19 @@ export const NavbarLinks = ({ section }: Props) => {
     projects: 'Proyectos',
   }
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (section === 'home') {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      window.history.pushState(null, '', '/');
+    }
+  }
+
   return (
     <Link
       href={`#${section}`}
       scroll={true}
+      onClick={handleClick}
       className={`block font-bold text-[15px] transition-colors duration-200 ${
         activeSection === section
         ? 'text-primary dark:text-secondary'

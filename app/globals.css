@@ -6,12 +6,12 @@
   ============================== */
 
 :root {
-  --color-background: #f2f4f6; /* Color de fondo principal (página) */
+  --color-background: #fffffe; /* Color de fondo principal (página) */
   --color-border: #E0E0E0;
-  --color-primary: #ff5470;
-  --color-secondary: #fde24f;
-  --color-surface: #fffffe;    /* Color de Navbar y Cards */
-  --color-text: #333333;
+  --color-primary: #994ff3;
+  --color-secondary: #4fc4cf;
+  --color-surface: #f2eef5;    /* Color de Navbar y Cards */
+  --color-text: #181818;
 }
 
 [data-theme='dark'] {
