@@ -16,6 +16,37 @@ import typescriptIcon from '../assets/typescript.png'
 
 export const experiences = [
   {
+    company: 'Opening Gates International',
+    date: 'Septiembre - Diciembre 2022',
+    description: [
+      'Participé en el desarrollo de un sistema web utilizando PHP como tecnología principal, complementado con funcionalidades del lado del cliente en JavaScript. Mis responsabilidades incluyeron la implementación de validaciones específicas para campos en formularios, la generación de reportes, el consumo de APIs y servicios con autenticación. Además, contribuí al desarrollo del backend, gestionando procedimientos y colaborando en el modelado de la base de datos con MySQL. Para el diseño y la interfaz de usuario, utilicé Bootstrap, AG Grid para el manejo de tablas y SweetAlert para la visualización de alertas.'
+    ],
+    location: 'Remoto',
+    logo: logoOgiImage,
+    technologies: [
+      {
+        icon: phpIcon,
+        text: 'PHP',
+      },
+      {
+        icon: javascriptIcon,
+        text: 'Javascript',
+      },
+      {
+        icon: bootstarpIcon,
+        text: 'Bootstrap',
+      },
+      {
+        icon: mysqlIcon,
+        text: 'MySQL',
+      },
+      {
+        icon: dockerIcon,
+        text: 'Docker',
+      }
+    ]
+  },
+  {
     company: 'Comuniquemonos Corp SAS',
     date: 'Abril 2022 - 2024',
     description: [
@@ -101,37 +132,6 @@ export const experiences = [
       {
         icon: mongoDBIcon,
         text: 'MongoDB',
-      },
-      {
-        icon: dockerIcon,
-        text: 'Docker',
-      }
-    ]
-  },
-  {
-    company: 'Opening Gates International',
-    date: 'Septiembre 2022 - Actualidad',
-    description: [
-      'Participé en el desarrollo de un sistema web utilizando PHP como tecnología principal, complementado con funcionalidades del lado del cliente en JavaScript. Mis responsabilidades incluyeron la implementación de validaciones específicas para campos en formularios, la generación de reportes, el consumo de APIs y servicios con autenticación. Además, contribuí al desarrollo del backend, gestionando procedimientos y colaborando en el modelado de la base de datos con MySQL. Para el diseño y la interfaz de usuario, utilicé Bootstrap, AG Grid para el manejo de tablas y SweetAlert para la visualización de alertas.'
-    ],
-    location: 'Remoto',
-    logo: logoOgiImage,
-    technologies: [
-      {
-        icon: phpIcon,
-        text: 'PHP',
-      },
-      {
-        icon: javascriptIcon,
-        text: 'Javascript',
-      },
-      {
-        icon: bootstarpIcon,
-        text: 'Bootstrap',
-      },
-      {
-        icon: mysqlIcon,
-        text: 'MySQL',
       },
       {
         icon: dockerIcon,

@@ -3,24 +3,35 @@ import { Geist, Geist_Mono, Poppins } from 'next/font/google'
 import { GoogleAnalytics } from './GoogleAnalytics'
 import "./globals.css";
 
+import { ThemeProvider } from './providers/ThemeProvider';
+
+// Fuente principal: Geist
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  subsets: ["latin"]
 });
 
+// Fuente secundaria: Geist Mono
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  subsets: ["latin"]
 });
 
+// Fuente secundaria: Poppins
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700']
 });
 
 export const metadata: Metadata = {
-  title: "John Gil",
+  title: "John Gil - Desarrollador Full Stack",
+  creator: "John Gil",
+  authors: [{
+    name: "John Gil",
+    url: "https://github.com/johndev983",
+  }],
+  publisher: "John Gil",
   description: "John Gil es un desarrollador full stack con experiencia en React, Next.js, Node.js y NestJS. Apasionado por crear soluciones innovadoras y mejorar la experiencia del usuario.",
   keywords: ['Desarrollador Full Stack', 'React', 'Next.js', 'Node.js', 'NestJS', 'Ingeniería de Software', 'Desarrollo Web', 'Desarrollo Móvil'],
 };
@@ -31,11 +42,17 @@ interface Props {
 
 export default function RootLayout({ children }: Readonly<Props>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}>
-        { children }
-        <GoogleAnalytics />
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="antialiased">
+        <ThemeProvider>
+          {children}
+          <GoogleAnalytics />
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

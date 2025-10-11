@@ -34,8 +34,8 @@ export const Logo = ({ text = 'dev' }: { text?: string }) => {
   };
 
   return (
-    <div ref={ textRef } className="flex items-center text-xl md:text-2xl font-bold text-[#23232A] font-mono">
-      <span className="text-[#4E2780]">&#60;</span>John.<span className="text-[#4E2780] inline-flex">{ wrapLetters( text ) }&nbsp;&#47;&#62;</span>
+    <div ref={ textRef } className="flex items-center text-xl md:text-2xl font-bold text-text font-mono">
+      <span className="text-text">&#60;</span>John.<span className="text-primary inline-flex">{ wrapLetters( text ) }&nbsp;&#47;&#62;</span>
     </div>
   );
 }
