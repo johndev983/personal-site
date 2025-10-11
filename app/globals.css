@@ -1,16 +1,35 @@
 @import "tailwindcss";
+@import "./theme.css";
 
-@theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-poppins: var(--font-poppins);
+  /* ==============================
+  Variables de Tema (Light/Dark)
+  ============================== */
+
+:root {
+  --color-background: #f2f4f6; /* Color de fondo principal (página) */
+  --color-border: #E0E0E0;
+  --color-primary: #ff5470;
+  --color-secondary: #fde24f;
+  --color-surface: #fffffe;    /* Color de Navbar y Cards */
+  --color-text: #333333;
 }
 
-body {
-  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+[data-theme='dark'] {
+  --color-background: #16161a; /* Color de fondo principal (página) */
+  --color-border: #3C3C3C;
+  --color-primary: #7f5af0;
+  --color-secondary: #2cb67d;
+  --color-surface: #242629;    /* Color de Navbar y Cards (ligeramente más claro) */
+  --color-text: #fffffe;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
   transition: background-color 0.3s ease, color 0.3s ease;
 }

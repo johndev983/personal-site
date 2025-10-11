@@ -11,7 +11,7 @@ export const ThemeToggleButton = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center justify-center w-12 h-12 text-base font-medium leading-normal text-center align-middle transition-colors duration-150 ease-in-out bg-transparent border border-solid shadow-none cursor-pointer rounded-2xl text-stone-500 border-stone-200 hover:text-primary active:text-primary focus:text-primary"
+      className="flex items-center justify-center w-12 h-12 text-base font-medium leading-normal text-center align-middle transition-colors duration-150 ease-in-out bg-transparent border border-border-color shadow-none cursor-pointer rounded-2xl text-stone-400 hover:text-primary active:text-primary focus:text-primary"
     >
       <AnimatePresence mode="wait" initial={false}>
         {theme === 'light' ? (

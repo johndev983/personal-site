@@ -7,7 +7,7 @@ import { ThemeToggleButton } from './ThemeToggleButton'
 export const Navbar = () => {
   return (
     <>
-      <header className="fixed top-0 left-0 w-full flex border-b py-4 px-4 sm:px-10 font-sans min-h-[70px] tracking-wide z-50 rounded-b-lg bg-background dark:bg-dark-background border-border-light dark:border-border-dark">
+      <header className="bg-surface border-border-color fixed top-0 left-0 w-full flex border-b py-4 px-4 sm:px-10 font-sans min-h-[70px] tracking-wide z-50 rounded-b-lg">
         <div className="flex flex-wrap items-center gap-4 w-full">
           <Logo />
 

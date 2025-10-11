@@ -25,7 +25,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "John Gil",
+  title: "John Gil - Desarrollador Full Stack",
+  creator: "John Gil",
+  authors: [{
+    name: "John Gil",
+    url: "https://github.com/johndev983",
+  }],
+  publisher: "John Gil",
   description: "John Gil es un desarrollador full stack con experiencia en React, Next.js, Node.js y NestJS. Apasionado por crear soluciones innovadoras y mejorar la experiencia del usuario.",
   keywords: ['Desarrollador Full Stack', 'React', 'Next.js', 'Node.js', 'NestJS', 'Ingeniería de Software', 'Desarrollo Web', 'Desarrollo Móvil'],
 };
@@ -36,8 +42,12 @@ interface Props {
 
 export default function RootLayout({ children }: Readonly<Props>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} bg-background text-text dark:bg-dark-background dark:text-dark-text`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="antialiased">
         <ThemeProvider>
           {children}
           <GoogleAnalytics />
