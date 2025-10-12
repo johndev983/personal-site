@@ -11,7 +11,7 @@ export const Cv = () => {
   }
 
   return (
-    <div className="my-40 md:my-16 lg:my-40 2xl:my-60 text-center">
+    <div className="my-40 md:my-16 lg:my-40 2xl:my-60 text-center" id="home">
       <h1 className="text-gray-400 text-2xl lg:text-3xl font-mono mb-6">Hello World 👋</h1>
       <h2 className="text-gray-500 text-2xl lg:text-4xl font-semibold mb-2">Soy John Gil</h2>
       <h2 className="font-bold text-3xl uppercase lg:text-5xl mb-5">Desarrollador Full Stack</h2>

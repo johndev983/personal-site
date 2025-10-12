@@ -11,15 +11,24 @@ export const Skills = () => {
   const trackRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const width = window.innerWidth;
+
+    const baseDuration = 80; // referencia
+    const duration = (width / 1920) * baseDuration; // proporcional al ancho (1920px como base)
+
     controls.start({
-      x: ['0%', '-50%'], // Mueve el track a la izquierda hasta la mitad
+      x: ['0%', '-50%'],
       transition: {
-        duration: 80,
+        duration,
         ease: 'linear',
         repeat: Infinity,
       },
-    })
-  }, [controls])
+    });
+
+    return () => {
+      controls.stop();
+    };
+  }, [ controls ])
 
   return (
     <div className="absolute left-2/2 right-2/2 w-screen -translate-x-2/2 overflow-hidden">
