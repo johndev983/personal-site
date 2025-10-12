@@ -4,9 +4,10 @@ import logoComuniquemonos from '../assets/logo-comuniquemonos.png'
 import bashScriptIcon from '../assets/bash-script.png'
 import bootstarpIcon from '../assets/bootstrap.png'
 import dockerIcon from '../assets/docker.png'
+import gitIcon from '../assets/git.png'
 import javascriptIcon from '../assets/javascript.png'
 import linuxIcon from '../assets/linux.png'
-import mongoDBIcon from '../assets/mongo-db.png'
+import materialUiIcon from '../assets/material-ui.png'
 import mysqlIcon from '../assets/mysql.png'
 import nestjsIcon from '../assets/nestjs.png'
 import nextjsIcon from '../assets/nextjs.png'
@@ -17,24 +18,40 @@ import typescriptIcon from '../assets/typescript.png'
 export const experiences = [
   {
     company: 'Opening Gates International',
-    date: 'Septiembre - Diciembre 2022',
+    date: 'Mayo - Agosto 2025',
     description: [
-      'Participé en el desarrollo de un sistema web utilizando PHP como tecnología principal, complementado con funcionalidades del lado del cliente en JavaScript. Mis responsabilidades incluyeron la implementación de validaciones específicas para campos en formularios, la generación de reportes, el consumo de APIs y servicios con autenticación. Además, contribuí al desarrollo del backend, gestionando procedimientos y colaborando en el modelado de la base de datos con MySQL. Para el diseño y la interfaz de usuario, utilicé Bootstrap, AG Grid para el manejo de tablas y SweetAlert para la visualización de alertas.'
+      'Durante un proceso de tres meses, participé en la migración y modernización integral del sitio web, transformando su arquitectura en un sistema modular y desacoplado. Este proyecto tuvo como objetivo principal mejorar el rendimiento, la escalabilidad y la capacidad de mantenimiento del sistema, además de optimizar la experiencia del usuario y la visibilidad en motores de búsqueda (SEO).',
+      'En esta actualización, se redefinió la siguiente arquitectura tecnológica:',
+      'El Frontend se migro a un stack moderno basado en React, Next.js, TypeScript y Material UI, priorizando el rendimiento, la mantenibilidad, componentes reutilizables, enrutamiento dinámico, renderizado híbrido (SSR/SSG) para potenciar el SEO y las buenas prácticas de desarrollo.',
+      'El Backend se reescribio en NestJS, con una estructura orientada a controladores y servicios, asegurando la creación de APIs RESTful robustas, escalables y con un manejo eficiente de dependencias.',
+      'Además, implementé un entorno de desarrollo colaborativo mediante Git y control de versiones en ramas. El resultado fue un sitio más rápido, modular, seguro y adaptable, alineado con las tendencias tecnológicas actuales y preparado para futuras integraciones.'
     ],
     location: 'Remoto',
     logo: logoOgiImage,
     technologies: [
       {
-        icon: phpIcon,
-        text: 'PHP',
-      },
-      {
         icon: javascriptIcon,
         text: 'Javascript',
       },
       {
-        icon: bootstarpIcon,
-        text: 'Bootstrap',
+        icon: reactIcon,
+        text: 'React',
+      },
+      {
+        icon: typescriptIcon,
+        text: 'TypeScript',
+      },
+      {
+        icon: nextjsIcon,
+        text: 'Next.js',
+      },
+      {
+        icon: materialUiIcon,
+        text: 'Material UI',
+      },
+      {
+        icon: nestjsIcon,
+        text: 'NestJS',
       },
       {
         icon: mysqlIcon,
@@ -43,6 +60,40 @@ export const experiences = [
       {
         icon: dockerIcon,
         text: 'Docker',
+      },
+      {
+        icon: gitIcon,
+        text: 'Git',
+      }
+    ],
+    secondary: [
+      {
+        date: 'Septiembre - Diciembre 2022',
+        description: [
+          'Participé en el desarrollo de un sistema web utilizando PHP como tecnología principal, complementado con funcionalidades del lado del cliente en JavaScript. Mis responsabilidades incluyeron la implementación de validaciones específicas para campos en formularios, la generación de reportes, el consumo de APIs y servicios con autenticación. Además, contribuí al desarrollo del backend, gestionando procedimientos y colaborando en el modelado de la base de datos con MySQL. Para el diseño y la interfaz de usuario, utilicé Bootstrap, AG Grid para el manejo de tablas y SweetAlert para la visualización de alertas.'
+        ],
+        technologies: [
+          {
+            icon: phpIcon,
+            text: 'PHP',
+          },
+          {
+            icon: javascriptIcon,
+            text: 'Javascript',
+          },
+          {
+            icon: bootstarpIcon,
+            text: 'Bootstrap',
+          },
+          {
+            icon: mysqlIcon,
+            text: 'MySQL',
+          },
+          {
+            icon: dockerIcon,
+            text: 'Docker',
+          }
+        ] 
       }
     ]
   },
@@ -96,42 +147,6 @@ export const experiences = [
       {
         icon: bashScriptIcon,
         text: 'Bash Script',
-      },
-      {
-        icon: dockerIcon,
-        text: 'Docker',
-      }
-    ]
-  },
-  {
-    company: 'Three Steps Inc',
-    date: 'Noviembre - Diciembre 2023',
-    description: [
-      'Participé en el desarrollo de un sistema web crucial, utilizando Next.js y React para crear una interfaz de usuario intuitiva y de alto rendimiento. Implementé formularios y validaciones robustas con React Hook Form, optimizando la experiencia del usuario. Además, se integró y gestionó eficientemente el consumo de servicios y la autenticación, asegurando la seguridad y funcionalidad del sistema.',
-      'En el backend, se desarrolláron procedimientos clave con NestJS, contribuyendo significativamente a la lógica del servidor. Para la interfaz de usuario, se aprovechó Material UI, creando un diseño atractivo y consistente.'
-    ],
-    location: 'Remoto',
-    logo: logoOgiImage,
-    technologies: [
-      {
-        icon: reactIcon,
-        text: 'React',
-      },
-      {
-        icon: nextjsIcon,
-        text: 'Next.js',
-      },
-      {
-        icon: nestjsIcon,
-        text: 'NestJS',
-      },
-      {
-        icon: typescriptIcon,
-        text: 'TypeScript',
-      },
-      {
-        icon: mongoDBIcon,
-        text: 'MongoDB',
       },
       {
         icon: dockerIcon,
