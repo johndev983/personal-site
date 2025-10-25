@@ -10,8 +10,8 @@ export const Experiences = () => {
   const [ data ] = useState<ExperiencencesInterface[]>( experiences )
 
   return (
-    <div className="xl:mt-20 2xl:mt-40" id="experiences">
-      <div className="p-4 text-left mt-60 xl:mt-40 2xl:mt-40 mb-30 w-full">
+    <div className="xl:mt-16 2xl:mt-20" id="experiences">
+      <div className="p-4 text-left mt-40 xl:mt-40 2xl:mt-40 mb-30 w-full">
         <h2 className="font-bold text-xl md:text-4xl">Experiencia profesional</h2>
         <h2 className="text-gray-400 text-sm md:text-lg font-semibold mb-8 md:mb-12">Empresas, tecnologías y logros clave.</h2>
         
