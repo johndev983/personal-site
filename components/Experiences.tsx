@@ -10,14 +10,14 @@ export const Experiences = () => {
   const [ data ] = useState<ExperiencencesInterface[]>( experiences )
 
   return (
-    <div className="xl:mt-20 2xl:mt-40" id="experiences">
-      <div className="p-4 text-left mt-60 xl:mt-40 2xl:mt-40 mb-30 w-full">
+    <div className="xl:mt-16 2xl:mt-20" id="experiences">
+      <div className="p-4 text-left mt-40 xl:mt-40 2xl:mt-40 mb-30 w-full">
         <h2 className="font-bold text-xl md:text-4xl">Experiencia profesional</h2>
-        <h2 className="text-gray-400 text-sm md:text-lg font-semibold mb-15">Empresas, tecnologías y logros clave.</h2>
+        <h2 className="text-gray-400 text-sm md:text-lg font-semibold mb-8 md:mb-12">Empresas, tecnologías y logros clave.</h2>
         
         {
           data.map(({ company, date, description, location, secondary, technologies }, index) => (
-            <div key={ company } className="pt-8">
+            <div key={ company }>
               <div className="pb-6">
                 <h2 className="text-base md:text-2xl font-bold mb-1">{ company }</h2>
                 <div className="flex items-center mb-4 text-xs md:text-sm text-text/60">
@@ -49,13 +49,13 @@ export const Experiences = () => {
 
               {
                 secondary?.map(({ date, description, technologies }) => (
-                  <div key={`secondary-${ company }`} className="pl-0 md:pl:8 lg:pl-16">
+                  <div key={`secondary-${ company }`} className="pl-0 md:pl:8 lg:pl-16 pt-4">
                     <div className="flex items-center mb-4 text-xs md:text-sm text-text/60">
                       <span className="mr-2"></span>
                       <span className="flex items-center gap-2"><IoCalendarOutline /> { date }</span>
                     </div>
 
-                    <div className="inline-flex flex-wrap items-center gap-3 group">
+                    <div className="inline-flex flex-wrap items-center gap-3 group pb-6">
                       {
                         technologies?.map(({ icon, text }, index) => (
                           <span

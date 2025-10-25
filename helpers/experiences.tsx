@@ -70,7 +70,8 @@ export const experiences = [
       {
         date: 'Septiembre - Diciembre 2022',
         description: [
-          'Participé en el desarrollo de un sistema web utilizando PHP como tecnología principal, complementado con funcionalidades del lado del cliente en JavaScript. Mis responsabilidades incluyeron la implementación de validaciones específicas para campos en formularios, la generación de reportes, el consumo de APIs y servicios con autenticación. Además, contribuí al desarrollo del backend, gestionando procedimientos y colaborando en el modelado de la base de datos con MySQL. Para el diseño y la interfaz de usuario, utilicé Bootstrap, AG Grid para el manejo de tablas y SweetAlert para la visualización de alertas.'
+          'Participé en el desarrollo de un sistema web utilizando PHP como tecnología principal, complementado con funcionalidades del lado del cliente en JavaScript. También gestioné y aseguré la integridad del código fuente utilizando Git como control de versiones.',
+          'Mis responsabilidades incluyeron la implementación de validaciones específicas para campos en formularios, la generación de reportes, el consumo de APIs y servicios con autenticación. Además, contribuí al desarrollo del backend, gestionando procedimientos y colaborando en el modelado de la base de datos con MySQL. Para el diseño y la interfaz de usuario, utilicé Bootstrap, AG Grid para el manejo de tablas y SweetAlert para la visualización de alertas.'
         ],
         technologies: [
           {
@@ -92,6 +93,10 @@ export const experiences = [
           {
             icon: dockerIcon,
             text: 'Docker',
+          },
+          {
+            icon: gitIcon,
+            text: 'Git',
           }
         ] 
       }

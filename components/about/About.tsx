@@ -9,10 +9,10 @@ import { InfoCard } from './InfoCard'
 
 export const About = () => {
   return (
-    <div className="2xl:mt-20" id="about">
+    <div className="xl:mt-16 2xl:mt-20" id="about">
       <div className="p-4 mx-auto mt-40 2xl:mt-40">
         <h2 className="font-bold text-xl md:text-4xl">Sobre mí</h2>
-        <h2 className="text-gray-400 text-sm md:text-lg font-semibold mb-15">Acerca de mis habilidades, herramientas y conocimientos.</h2>
+        <h2 className="text-gray-400 text-sm md:text-lg font-semibold mb-8 md:mb-12">Acerca de mis habilidades, herramientas y conocimientos.</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <InfoCard
