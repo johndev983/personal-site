@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Poppins } from 'next/font/google'
-import { GoogleAnalytics } from './GoogleAnalytics'
 import "./globals.css";
 
 import { ThemeProvider } from './providers/ThemeProvider';
+import { Chat } from './Chat';
+import { GoogleAnalytics } from './GoogleAnalytics'
+
 import { seo } from '@/helpers';
 
 // Fuente principal: Geist
@@ -41,6 +43,7 @@ export default function RootLayout({ children }: Readonly<Props>) {
       <body className="antialiased">
         <ThemeProvider>
           {children}
+          <Chat />
           <GoogleAnalytics />
         </ThemeProvider>
       </body>
