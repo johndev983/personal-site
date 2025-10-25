@@ -4,6 +4,7 @@ import { GoogleAnalytics } from './GoogleAnalytics'
 import "./globals.css";
 
 import { ThemeProvider } from './providers/ThemeProvider';
+import { seo } from '@/helpers';
 
 // Fuente principal: Geist
 const geistSans = Geist({
@@ -24,17 +25,7 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700']
 });
 
-export const metadata: Metadata = {
-  title: "John Gil - Desarrollador Full Stack",
-  creator: "John Gil",
-  authors: [{
-    name: "John Gil",
-    url: "https://github.com/johndev983",
-  }],
-  publisher: "John Gil",
-  description: "John Gil es un desarrollador full stack con experiencia en React, Next.js, Node.js y NestJS. Apasionado por crear soluciones innovadoras y mejorar la experiencia del usuario.",
-  keywords: ['Desarrollador Full Stack', 'React', 'Next.js', 'Node.js', 'NestJS', 'Ingeniería de Software', 'Desarrollo Web', 'Desarrollo Móvil'],
-};
+export const metadata: Metadata = seo;
 
 interface Props {
   children: React.ReactNode;
