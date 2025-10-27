@@ -18,7 +18,7 @@ export const seo = {
     siteName: 'Portafolio',
     images: [
       {
-        url: '../assets/about.jpeg',
+        url: '../public/about.jpeg',
         width: 1200,
         height: 630,
         alt: 'John Gil | Desarrollador Full Stack',
@@ -32,7 +32,7 @@ export const seo = {
     title: 'John Gil | Desarrollador Full Stack',
     description: 'Explora mi experiencia en desarrollo web y móvil con proyectos reales.',
     creator: '@Jhongil983',
-    images: ['../assets/about.jpeg'],
+    images: ['../public/about.jpeg'],
   },
   robots: {
     index: true,

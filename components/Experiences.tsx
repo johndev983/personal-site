@@ -80,7 +80,7 @@ export const Experiences = () => {
               {
                 index === data.length - 1
                   ? null
-                  :<hr key={ index + '-hr' } className="border-t-2 border-border-color/60 my-6" />
+                  :<hr key={ index + '-hr' } className="border-t-2 border-border-color/60 mt-6 mb-8 lg:mt-8 lg:mb-12" />
               }
             </div>
           ))

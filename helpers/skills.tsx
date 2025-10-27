@@ -13,9 +13,14 @@ import dockerIcon from '../assets/docker.png'
 import javascriptIcon from '../assets/javascript.png'
 import materialUIcon from '../assets/material-ui.png'
 import mongoDBIcon from '../assets/mongo-db.png'
+import gitIcon from '../assets/git.png'
+import cursorIcon from '../assets/cursor.png'
+import jiraIcon from '../assets/jira.png'
+import postmanIcon from '../assets/postman.png'
+import tablePlusIcon from '../assets/table-plus.png'
 
 
-export const skills = [
+export const technologies = [
   {
     icon: reactIcon,
     text: 'React',
@@ -49,10 +54,6 @@ export const skills = [
     text: 'MySQL',
   },
   {
-    icon: linuxIcon,
-    text: 'Linux',
-  },
-  {
     icon: bashScriptIcon,
     text: 'Bash Script',
   },
@@ -76,4 +77,27 @@ export const skills = [
     icon: nextjsIcon,
     text: 'Next.js',
   },
+]
+
+export const tools = [
+  {
+    icon: gitIcon,
+    text: 'GitHub',
+  },
+  {
+    icon: cursorIcon,
+    text: 'Cursor',
+  },
+  {
+    icon: jiraIcon,
+    text: 'Jira',
+  },
+  {
+    icon: postmanIcon,
+    text: 'Postman',
+  },
+  {
+    icon: linuxIcon,
+    text: 'Linux',
+  }
 ]

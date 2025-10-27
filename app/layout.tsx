@@ -3,8 +3,7 @@ import { Geist, Geist_Mono, Poppins } from 'next/font/google'
 import "./globals.css";
 
 import { ThemeProvider } from './providers/ThemeProvider';
-import { Chat } from './Chat';
-import { GoogleAnalytics } from './GoogleAnalytics'
+import { ChatLive, GoogleAnalytics } from './scripts'
 
 import { seo } from '@/helpers';
 
@@ -43,7 +42,7 @@ export default function RootLayout({ children }: Readonly<Props>) {
       <body className="antialiased">
         <ThemeProvider>
           {children}
-          <Chat />
+          <ChatLive />
           <GoogleAnalytics />
         </ThemeProvider>
       </body>

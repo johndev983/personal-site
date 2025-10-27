@@ -1,4 +1,4 @@
-import { About, Cv, Footer, Navbar, Experiences, SocialLinks, ScrollToTopButton } from '@/components'
+import { About, Cv, Footer, Navbar, Experiences, SocialLinks, ScrollToTopButton, Skills } from '@/components'
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
         <Cv />
         <SocialLinks />
         <About />
+        <Skills />
         <Experiences />
       </main>
 

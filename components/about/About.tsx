@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { Skills } from './Skills'
 import { IoPersonOutline, IoSchoolOutline } from 'react-icons/io5'
 
 import aboutImage from '../../assets/about.jpeg'
@@ -53,13 +52,6 @@ export const About = () => {
             alt="Picture of the author"
           />
         </div> */}
-      </div>
-      
-      <div className="p-4 mx-auto mt-12 md:mt-28">
-        <h2 className="font-bold text-xl md:text-4xl">Habilidades técnicas</h2>
-        <h2 className="text-gray-400 text-sm md:text-lg font-semibold mb-8 md:mb-12">Stack principal y herramientas que utilizo a diario.</h2>
-
-        <Skills />
       </div>
     </div>
   );
