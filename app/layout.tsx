@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Poppins } from 'next/font/google'
 import "./globals.css";
 
 import { ThemeProvider } from './providers/ThemeProvider';
-import { ChatLive, GoogleAnalytics } from './scripts'
+import { ChatLive, GoogleAnalytics, TagManager } from './scripts'
 
 import { seo } from '@/helpers';
 
@@ -39,11 +39,25 @@ export default function RootLayout({ children }: Readonly<Props>) {
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <TagManager />
+        <ChatLive />
+      </head>
+
       <body className="antialiased">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PQV423S8"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+
+        <GoogleAnalytics />
+
         <ThemeProvider>
           {children}
-          <ChatLive />
-          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>
