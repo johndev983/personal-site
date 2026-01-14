@@ -1,13 +1,14 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { saveAs } from 'file-saver'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 
 export const Cv = () => {
-  const cvUrl = '/cv.pdf'
-
   const downloadCV = () => {
-    saveAs(cvUrl, 'JohnGil_CV.pdf')
+    const theme = localStorage.getItem('theme')
+    const cvUrl = theme === 'dark' ? '/cv-dark.pdf' : '/cv.pdf'
+    saveAs(cvUrl, `JohnGil_CV.pdf`)
   }
 
   return (
